@@ -1,0 +1,144 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem;
+}
+/*Navbar area*/
+header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+.logo img {
+  width: 70px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 3px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 2rem;
+  margin-right: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: goldenrod;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  ;
+}
+
+.k-main-content {
+  line-height: 1.5;
+  width: 70%;
+}
+
+.k-mandatory::after {
+  content: " *";
+}
+
+.k-main-content ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.k-btn-container {
+  margin-top: 2rem;
+}
+
+.k-cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.k-cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.k-cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.k-cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.k-cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.k-cta:hover svg {
+  transform: translateX(0);
+}
+
+.k-cta:active {
+  transform: scale(0.95);
+}
+
+.k-sidebar {
+  width: 25%;
+}
+
+.k-sidebar h3 {
+  color: #b65630;
+}
+
+.k-sidebar-hotline,
+.k-sidebar-address {
+  padding: 1em;
+  border-radius: 1em;
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+.k-sidebar-hotline {
+  background-color: #fdf4a6;
+}
+
+.k-sidebar-address {
+  background-color: #c5f5fd;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
